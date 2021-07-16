@@ -2,7 +2,7 @@
 
 > arvis workflow to browse minecraft recipes using Quick Look.
 
-<img src="screenshot.png" width="694">
+![](./demo.png)
 
 ## Install
 
