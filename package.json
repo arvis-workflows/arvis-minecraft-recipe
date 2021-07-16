@@ -1,0 +1,24 @@
+{
+  "name": "arvis-minecraft-recipe",
+  "version": "0.0.1",
+  "description": "View any Minecraft recipes",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "files": [
+    "icons/**",
+    "recipes/**",
+    "icon.png",
+    "index.js",
+    "arvis-workflow.json"
+  ],
+  "author": "Elliott Linder <elliott@linder.bz>",
+  "license": "MIT",
+  "dependencies": {
+    "arvish": ">=0.6.1",
+    "globby": "^8.0.1"
+  }
+}

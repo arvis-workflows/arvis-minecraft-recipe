@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "creator": "Elliott Linder",
+  "description": "View any Minecraft recipe",
+  "name": "arvis-minecraft-recipe",
+  "readme": "",
+  "version": "0.0.1",
+  "webAddress": "https://github.com/arvis-workflows/arvis-minecraft-recipe",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "mcr",
+      "title": "Search any Minecraft recipe",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}
